@@ -4,4 +4,6 @@
     --decorative-font: 'Press Start 2P';
     --weight-main-text: 410;
     --weight-title-text: 715;
+    --inline-size-card: clamp(23.438rem, 16.197rem + 30.892vw, 44rem);
+    --color-border-lable: #fff;
 }
