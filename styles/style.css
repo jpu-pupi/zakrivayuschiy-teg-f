@@ -149,7 +149,6 @@
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
   border: 2px solid transparent;
 }
 
@@ -165,13 +164,10 @@
   position: relative;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 15px 35px;
   justify-content: flex-end;
-  background-color: transparent;
-  border: none;
   background-color: var(--main-color);
   border: var(--accent-color) solid 2px;
-  padding: 15px 35px;
   transition: box-sadow 0.3s ease;
   cursor: pointer;
 }
@@ -271,10 +267,6 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 
 }
-
-.card__like-button:hover,
-.footer__save-button:hover,
-.dialog__close-button:hover {}
 
 .dialog[open] {
   display: flex;
