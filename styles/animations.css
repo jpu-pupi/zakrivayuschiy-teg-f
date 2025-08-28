@@ -1,5 +1,5 @@
 
-@keyframes heart-scale {
+@keyframes heart-pulsation {
     0% {
         transform: scale(1);
     }
@@ -13,7 +13,7 @@
     }
 }
 
-@keyframes visible-sparks {
+@keyframes fading-sparks {
     from {
         opacity: 0;
     }
