@@ -160,7 +160,6 @@
 
 .button {
   position: relative;
-  border: none;
   justify-content: center;
   background-color: var(--main-color);
   border: var(--accent-color) solid 2px;
