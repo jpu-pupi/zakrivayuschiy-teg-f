@@ -163,19 +163,19 @@
   border: none;
   justify-content: center;
   background-color: var(--main-color);
-  outline: var(--accent-color) solid 2px;
+  border: var(--accent-color) solid 2px;
   transition: box-shadow 0.3s ease;
-  padding-block-start: 12.5px;
-  padding-block-end: 12.5px;
+  padding: 0;
   cursor: pointer;
 }
 
 .card__like-button {
   display: flex;
   margin: 0;
-  line-height: 90%;
+  padding-top: 12px;
   width: 130px;
 }
+
 .main__save-button {
   display: flex;
   justify-self: center;
@@ -186,17 +186,18 @@
   padding: 17px 20px;
 }
 
-.card__button-text {
+.button__text-decoration {
   font-family: var(--decorative-font, 'Press Start 2P');
   font-size: 14px;
   line-height: 90%;
   padding: 0;
-  text-align: center;
   mix-blend-mode: difference;
   color: var(--main-color);
 }
 
 .dialog__close-button {
+  padding-block-start: 7.5px;
+  padding-block-end: 7.5px;
   text-transform: uppercase;
   inline-size: clamp(16.313rem, 15.608rem + 3.005vw, 18.313rem);
 }
@@ -213,10 +214,14 @@
 
 .button:hover::before {
   transform: scaleX(1);
-} 
+}
+
+.button:focus {
+  outline: none;
+}
 
 .button:focus-visible {
-  box-shadow: 4px 4px 0 var(--accent-color);
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .floppy {
@@ -342,7 +347,7 @@ dialog::backdrop {
     padding: 23px 25px;
   }
 
-  .footer__save-button {
+  .main__save-button {
     flex-direction: column;
   }
 
